@@ -1,0 +1,32 @@
+package gcd;
+import java.util.Scanner;
+
+public class gcd {
+
+	private static int[] arrs;
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter a Number1 & Number2: ");
+		int x = s.nextInt();
+		int y = s.nextInt();
+		int i,n,a,b,gcd =1;
+		if( x < y ) {
+			n = x;
+		}
+		else {
+			n = y;
+		}
+		for (i=1;i<=n;i++) {
+			a = x % i;
+			b = y % i;
+			if(a == 0 && b == 0) {
+				gcd =i;
+			}
+			
+		}
+		System.out.println(gcd);
+		
+	}
+
+}
