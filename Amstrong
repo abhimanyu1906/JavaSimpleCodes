@@ -1,0 +1,28 @@
+package amstrong;
+import java.util.Scanner;
+
+public class amstrong {
+
+	public static void main(String[] args) {
+		int x,z,y,w,a;
+		Scanner s = new Scanner(System.in);
+			System.out.println(" Enter the number: ");
+			int n = s.nextInt();
+				w = n / 10;
+				x = n / 100;
+				y = w % 10;
+				z = n % 10;
+				a = (x * x * x) + (y * y * y) + (z * z * z);
+				if(a == n)
+				{
+					System.out.println("Amstrong");
+					
+				}
+				else {
+					System.out.println("Not_Amstrong");
+				}
+			
+	
+	}
+
+}
