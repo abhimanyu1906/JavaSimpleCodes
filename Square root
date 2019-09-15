@@ -1,0 +1,23 @@
+package squareroot;
+
+import java.util.Scanner;
+
+public class squareroot {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.println(" Enter the number: ");
+		int n = s.nextInt();
+		int a = 0,i,j;
+		for (i = 1; i <= n; i++) {
+			for ( j = 1; j <= i; j++) {
+				a = i * j;
+			}
+			if(n == a) {
+				System.out.println("Square root: " + i);
+			}
+			
+		}
+	}
+
+}
