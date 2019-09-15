@@ -1,0 +1,36 @@
+package Com.hello;
+import java.util.Scanner;
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		
+		int i , x , count = 0;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a number: ");
+		int s = sc.nextInt();
+		if (s == 1) {
+			System.out.println("wrong number");
+		}
+		for ( i = 1; i <s+1; i++) {
+			
+			x = s % i;
+			
+		if (x == 0) {
+			count++;
+		}
+		
+		}
+		if  (count == 2) {
+			System.out.println("Prime number");
+		}
+		if (count > 2) {
+			System.out.println("Not Prime number");
+		}
+	}
+	
+	 
+	
+}
+
+
